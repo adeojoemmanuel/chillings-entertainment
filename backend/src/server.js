@@ -10,6 +10,7 @@ import vettingRoutes from './routes/vetting.js';
 import cityRoutes from './routes/cities.js';
 import contactRoutes from './routes/contact.js';
 import sponsorRoutes from './routes/sponsors.js';
+import celebrityRoutes from './routes/celebrity.js';
 
 dotenv.config();
 
@@ -93,6 +94,7 @@ app.use('/api/vetting', vettingRoutes);
 app.use('/api/cities', cityRoutes);
 app.use('/api/contact', contactRoutes);
 app.use('/api/sponsors', sponsorRoutes);
+app.use('/api/celebrity', celebrityRoutes);
 
 // 404 handler
 app.use((req, res) => {
@@ -104,7 +106,8 @@ app.use((req, res) => {
     cities: '/api/cities/*',
     contact: '/api/contact/*',
     sponsors: '/api/sponsors/*',
-    vetting: '/api/vetting/*'
+    vetting: '/api/vetting/*',
+    celebrity: '/api/celebrity/*'
   });
   res.status(404).json({ error: 'Route not found', path: req.originalUrl, method: req.method });
 });

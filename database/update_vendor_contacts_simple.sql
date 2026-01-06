@@ -37,3 +37,6 @@ FROM vendors
 WHERE email IS NOT NULL AND phone IS NOT NULL
 ORDER BY created_at DESC;
 
+
+
+

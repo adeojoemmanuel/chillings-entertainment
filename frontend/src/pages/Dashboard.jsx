@@ -103,6 +103,55 @@ const Dashboard = () => {
           <p className="text-gray-600">Manage and track all your events in one place</p>
         </div>
 
+        {/* Celebrity Service Request Feature Card */}
+        <div className="mb-8 bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 rounded-2xl shadow-xl p-6 md:p-8 text-white animate-fade-in">
+          <div className="flex flex-col md:flex-row items-center justify-between">
+            <div className="flex-1 mb-4 md:mb-0">
+              <div className="flex items-center mb-3">
+                <svg className="w-8 h-8 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />
+                </svg>
+                <h3 className="text-2xl font-bold">Bring Top Celebrities to Your Event</h3>
+              </div>
+              <p className="text-indigo-100 text-lg mb-4">
+                Connect with A-list celebrities, top performers, and influential personalities. 
+                Our team specializes in making celebrity appearances happen for your events.
+              </p>
+              <ul className="text-indigo-100 space-y-2 mb-4">
+                <li className="flex items-center">
+                  <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                  </svg>
+                  Quick response within 24-48 hours
+                </li>
+                <li className="flex items-center">
+                  <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                  </svg>
+                  Access to top-tier celebrity network
+                </li>
+                <li className="flex items-center">
+                  <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                  </svg>
+                  Transparent pricing and booking process
+                </li>
+              </ul>
+            </div>
+            <div className="flex-shrink-0">
+              <button
+                onClick={() => navigate('/request-celebrity')}
+                className="bg-white text-indigo-600 px-8 py-4 rounded-xl shadow-lg hover:shadow-2xl transform hover:scale-105 active:scale-95 transition-all duration-200 font-bold text-lg flex items-center space-x-2"
+              >
+                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4v16m8-8H4" />
+                </svg>
+                <span>Request Celebrity Services</span>
+              </button>
+            </div>
+          </div>
+        </div>
+
         {loading ? (
           <div className="flex items-center justify-center py-20">
             <div className="relative">

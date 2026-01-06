@@ -19,6 +19,7 @@ import PrivacyPolicy from './pages/PrivacyPolicy';
 import TermsOfService from './pages/TermsOfService';
 import AuthCallback from './pages/AuthCallback';
 import Account from './pages/Account';
+import RequestCelebrity from './pages/RequestCelebrity';
 
 const PrivateRoute = ({ children }) => {
   const { user, loading } = useAuth();
@@ -102,6 +103,14 @@ function App() {
             element={
               <PrivateRoute>
                 <Account />
+              </PrivateRoute>
+            }
+          />
+          <Route
+            path="/request-celebrity"
+            element={
+              <PrivateRoute>
+                <RequestCelebrity />
               </PrivateRoute>
             }
           />

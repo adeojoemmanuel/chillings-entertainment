@@ -277,7 +277,7 @@ const Home = () => {
             <iframe
               className="w-full h-full object-cover scale-110"
               src="https://www.youtube.com/embed/6DsGyXaGRzw?start=30&autoplay=1&mute=1&loop=1&playlist=6DsGyXaGRzw&controls=0&showinfo=0&rel=0&modestbranding=1&playsinline=1"
-              title="Chillings Entertainment Video Background"
+              title="Chilling Entertainment Video Background"
               frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               allowFullScreen
@@ -296,7 +296,7 @@ const Home = () => {
               </h1>
               <h2 className="text-3xl md:text-5xl lg:text-6xl font-bold mb-6 drop-shadow-2xl animate-slide-down animation-delay-200">
                 <span className="bg-gradient-to-r from-white via-indigo-200 to-purple-200 bg-clip-text text-transparent">
-                  Chillings Entertainment
+                  Chilling Entertainment
                 </span>
               </h2>
               <p className="text-base md:text-lg lg:text-xl text-white/90 max-w-3xl mx-auto mb-8 drop-shadow-lg animate-slide-up animation-delay-300">
@@ -886,7 +886,7 @@ const Home = () => {
                   <span className="text-white font-bold text-xl">E</span>
                 </div>
                 <h3 className="text-2xl font-bold bg-gradient-to-r from-white to-indigo-200 bg-clip-text text-transparent">
-                  Chillings Entertainment
+                  Chilling Entertainment
                 </h3>
               </div>
               <p className="text-gray-300 mb-4 max-w-md">
@@ -981,7 +981,7 @@ const Home = () => {
           <div className="border-t border-white/10 mt-8 pt-8">
             <div className="flex flex-col md:flex-row justify-between items-center">
               <p className="text-gray-400 text-sm">
-                © {new Date().getFullYear()} Chillings Entertainment. All rights reserved.
+                © {new Date().getFullYear()} Chilling Entertainment. All rights reserved.
               </p>
               <div className="flex items-center space-x-2 mt-4 md:mt-0">
                 <span className="text-gray-400 text-sm">Made with</span>

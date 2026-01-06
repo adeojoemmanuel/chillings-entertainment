@@ -88,5 +88,11 @@ export const sponsorsAPI = {
   applyForSponsorship: (data) => api.post('/sponsors/apply', data),
 };
 
+// Celebrity Services API
+export const celebrityAPI = {
+  requestService: (data) => api.post('/celebrity/request', data),
+  getMyRequests: () => api.get('/celebrity/my-requests'),
+};
+
 export default api;
 
